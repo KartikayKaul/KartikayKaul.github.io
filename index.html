@@ -1,36 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Kartikay Kaul - Portfolio</title>
-        <link rel="stylesheet" href="./styles/style.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kartikay Kaul - Portfolio</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">Kartikay</div>
+        <div class="hamburger" id="hamburger">☰</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#" data-tab="experience">Experience</a></li>
+          <li><a href="#" data-tab="projects">Projects</a></li>
+          <li><a href="#" data-tab="skills">Skills</a></li>
+          <li><a href="#" data-tab="certifications">Certifications</a></li>
+          <li><a href="#" data-tab="contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
-    <body>
-        <!-- NAVIGATION -->
-        <nav class="navbar">
-            <div class="nav-container">
-            <div class="logo">Kartikay</div>
-            <div class="hamburger" onclick="toggleMenu()">☰</div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            </div>
-        </nav>
-       <header class="hero">
-            <h1>Kartikay Kaul</h1>
-            <p> Data Engineering | ML | Automation </p>
-            <a class="btn" href="./assets/resume.pdf" target="_blank">My Resume</a>
-       </header>
-       <main>
-            <section id="experience" data-aos="fade-up">
-                <h2> Experience </h2>
+    <header class="hero">
+      <h1>Kartikay Kaul</h1>
+      <p>Data Engineering | ML | Automation</p>
+      <a class="btn" href="./assets/resume.pdf" target="_blank">My Resume</a>
+    </header>
+
+    <main>
+      <div class="tab-buttons">
+        <button class="tab-btn active" data-tab="experience">Experience</button>
+        <button class="tab-btn" data-tab="projects">Projects</button>
+        <button class="tab-btn" data-tab="skills">Skills</button>
+        <button class="tab-btn" data-tab="certifications">Certifications</button>
+        <button class="tab-btn" data-tab="contact">Contact</button>
+      </div>
+
+      <!-- Place all section tabs here -->
+      <div id="tabContainer">
+        <section id="experience" class="tab-content"> 
+            <h2> Experience </h2>
                 <div class="job">
                     <h3>Tech Mahindra - Python Developer Intern</h3>
                         <p><i>04/2025 - 07/2025 | Remote</i></p>
@@ -77,10 +88,9 @@
                         <li>Added Python backend for batch processing and data enrichment.</li>
                     </ul>
                 </div>
-            </section>
-
-            <section id="projects" data-aos="fade-up">
-                <h2>Projects</h2>
+        </section>
+        <section id="projects" class="tab-content">
+            <h2>Projects</h2>
                 <div class="project-card">
                     <h3>📚 Matrix – C++ Linear Algebra Library</h3>
                     <p><i>01/2024 – Present</i><br>
@@ -112,10 +122,9 @@
                     <a href="https://github.com/KartikayKaul/AutoDrive-GTA5" target="_blank">🔗 GitHub</a>
                     </p>
                 </div>
-            </section>
-
-            <section id="skills" data-aos="fade-up">
-                <h2>Skills</h2>
+        </section>
+        <section id="skills" class="tab-content">
+            <h2>Skills</h2>
                 <div class="skills-grid">
                     <div class="skill-card">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
@@ -206,11 +215,9 @@
                     <span>Postman</span>
                     </div>
                 </div>
-            </section>
-
-
-           <section id="certifications" data-aos="fade-up">
-            <h2>Certifications</h2>
+        </section>
+        <section id="certifications" class="tab-content">
+             <h2>Certifications</h2>
             <ul class="cert-list">
                 <li>🎓 <a href="https://credentials.databricks.com/profile/kartikaykaul264234/wallet" target="_blank">Databricks Certified Data Engineer Associate</a></li>
                 <li>🧩 <a href="https://credentials.databricks.com/profile/kartikaykaul264234/wallet" target="_blank">Google Chrome Extension Development</a></li>
@@ -220,34 +227,23 @@
                 <li>🖥️ <a href="https://credentials.databricks.com/profile/kartikaykaul264234/wallet" target="_blank">Full Stack Web Development</a></li>
                 <li>✅ <a href="https://credentials.databricks.com/profile/kartikaykaul264234/wallet" target="_blank">Databricks Fundamentals Accreditation</a></li>
             </ul>
-            </section>
-
-            <section id="contact" data-aos="fade-up">
-                <h2>Contact</h2>
-                <div class="contact-box">
+        </section>
+        <section id="contact" class="tab-content">
+            <div class="contact-box">
                     <p><a href="mailto:kartikaykaul13@gmail.com">📧 kartikaykaul13@gmail.com</a></p>
                     <p>
                     <a href="https://github.com/KartikayKaul" target="_blank">🐙 GitHub /KartikayKaul</a><br>
                     <a href="https://linkedin.com/in/kartikay‑k‑54304054/" target="_blank">🔗 LinkedIn</a>
                     </p>
                 </div>
-            </section>
+        </section>
+      </div>
+    </main>
 
-       </main>
-       <footer>
-            &copy; 2025 KartikayKaul
-       </footer>
+    <footer>&copy; 2025 KartikayKaul</footer>
 
-       <!-- scripts part-->
-        <script>
-            function toggleMenu() {
-                const navLinks = document.getElementById('navLinks');
-                navLinks.classList.toggle('active');
-            }
-        </script>
-       <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-        <script>
-            AOS.init({ duration: 800 });
-        </script>
-    </body>
+    <!-- JS Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="./scripts/scripts.js"></script>
+  </body>
 </html>
