@@ -220,31 +220,7 @@ ul li {
   color: #33bbee;
 }
 
-/* Tab Buttons */
-.tab-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin: 2rem 0;
-  flex-wrap: wrap;
-}
-
-.tab-btn {
-  padding: 0.6rem 1rem;
-  background-color: #1e1e1e;
-  color: #66ccff;
-  border: 1px solid #66ccff;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.tab-btn.active,
-.tab-btn:hover {
-  background-color: #66ccff;
-  color: #121212;
-}
-
+/* Tabs */
 .tab-content {
   display: none;
 }
