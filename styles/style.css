@@ -1,0 +1,55 @@
+body {
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #1e1e1e;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #66ccff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    h1, h2 {
+      color: #ffffff;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    .project, .job {
+      margin-bottom: 1.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #1e88e5;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background: #1565c0;
+    }
