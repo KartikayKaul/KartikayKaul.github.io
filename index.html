@@ -5,22 +5,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Kartikay Kaul - Portfolio</title>
         <link rel="stylesheet" href="./styles/style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     </head>
 
     <body>
        <header>
             <h1>Kartikay Kaul</h1>
             <p> Data Engineering | ML | Automation </p>
-            <nav>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
+            <nav class="navbar">
+                <div class="nav-container">
+                    <div class="logo">Kartikay</div>
+                    <div class="hamburger" onclick="toggleMenu()">☰</div>
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </nav>
-            <a class="btn" href="resume.pdf" target="_blank">My Resume</a>
+            <a class="btn" href="./assets/resume.pdf" target="_blank">My Resume</a>
        </header>
        <main>
-            <section id="experience">
+            <section id="experience" data-aos="fade-up">
                 <h2> Experience </h2>
                 <div class="job">
                     <h3>Tech Mahindra - Python Developer Intern</h3>
@@ -70,7 +78,7 @@
                 </div>
             </section>
 
-            <section id="projects">
+            <section id="projects" data-aos="fade-up">
                 <h2>Projects</h2>
 
                 <h3>🧠 Brain MRI Analysis using 2D U-Net</h3>
@@ -98,7 +106,7 @@
                     Web app for sharing academic files. Built with PHP, MySQL, HTML/CSS.</p>
             </section>
 
-            <section id="skills">
+            <section id="skills" data-aos="fade-up">
                 <h2>Skills</h2>
                 <p><strong>Languages:</strong> Python, SQL, JavaScript, C++, HTML/CSS</p>
                 <p><strong>Frameworks:</strong> PyTorch, Flask, TensorFlow, Pytest, FastAPI</p>
@@ -106,19 +114,22 @@
                 <p><strong>Cloud:</strong> AWS (Lambda, S3, Redshift, Glue)</p>
             </section>
 
-            <section id="certifications">
+            <section id="certifications" data-aos="fade-up">
                 <h2>Certifications</h2>
+                <p><a href="https://credentials.databricks.com/profile/kartikaykaul264234/wallet" target="_blank">
+                    Credentials link
+                </a></p>
                 <ul>
-                    <li><a href="#">Databricks Certified Data Engineer Associate</a></li>
-                    <li><a href="#">Google Chrome Extension Development</a></li>
-                    <li><a href="#">Deep Learning (Coursera)</a></li>
-                    <li><a href="#">Machine Learning (Coursera)</a></li>
-                    <li><a href="#">Julia Programming</a></li>
-                    <li><a href="#">Full Stack Web Development</a></li>
-                    <li><a href="#">Databricks Fundamentals Accreditation</a></li>
+                    <li><a href="https://credentials.databricks.com/profile/kartikaykaul264234/wallet">Databricks Certified Data Engineer Associate</a></li>
+                    <li><a href="https://credentials.databricks.com/profile/kartikaykaul264234/wallet">Google Chrome Extension Development</a></li>
+                    <li><a href="https://credentials.databricks.com/profile/kartikaykaul264234/wallet">Deep Learning (Coursera)</a></li>
+                    <li><a href="https://credentials.databricks.com/profile/kartikaykaul264234/wallet">Machine Learning (Coursera)</a></li>
+                    <li><a href="https://credentials.databricks.com/profile/kartikaykaul264234/wallet">Julia Programming</a></li>
+                    <li><a href="https://credentials.databricks.com/profile/kartikaykaul264234/wallet">Full Stack Web Development</a></li>
+                    <li><a href="https://credentials.databricks.com/profile/kartikaykaul264234/wallet">Databricks Fundamentals Accreditation</a></li>
                 </ul>
             </section>
-            <section id="contact">
+            <section id="contact" data-aos="fade-up">
                 <h2>Contact</h2>
                 <p>Email: <a href="mailto:kartikaykaul13@gmail.com">kartikaykaul13@gmail.com</a></p>
                 <p>
@@ -130,5 +141,15 @@
        <footer>
             &copy; 2025 KartikayKaul
        </footer>
+       <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
+            AOS.init({ duration: 800 });
+        </script>
+        <script>
+            function toggleMenu() {
+                const navLinks = document.getElementById('navLinks');
+                navLinks.classList.toggle('active');
+            }
+        </script>
     </body>
 </html>
