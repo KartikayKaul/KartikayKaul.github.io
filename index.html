@@ -10,21 +10,21 @@
 
     <body>
        <header>
+        <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Kartikay</div>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        </nav>
             <h1>Kartikay Kaul</h1>
             <p> Data Engineering | ML | Automation </p>
-            <nav class="navbar">
-                <div class="nav-container">
-                    <div class="logo">Kartikay</div>
-                    <div class="hamburger" onclick="toggleMenu()">☰</div>
-                    <ul class="nav-links" id="navLinks">
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#certifications">Certifications</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
             <a class="btn" href="./assets/resume.pdf" target="_blank">My Resume</a>
        </header>
        <main>
@@ -141,15 +141,17 @@
        <footer>
             &copy; 2025 KartikayKaul
        </footer>
-       <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-        <script>
-            AOS.init({ duration: 800 });
-        </script>
+
+       <!-- scripts part-->
         <script>
             function toggleMenu() {
                 const navLinks = document.getElementById('navLinks');
                 navLinks.classList.toggle('active');
             }
+        </script>
+       <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
+            AOS.init({ duration: 800 });
         </script>
     </body>
 </html>
