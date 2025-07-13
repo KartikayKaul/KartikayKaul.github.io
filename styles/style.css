@@ -13,22 +13,47 @@ body {
   line-height: 1.6;
 }
 
-header, footer {
+/* Hero Section */
+.hero {
   background-color: #1e1e1e;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 3rem 1rem;
 }
 
 h1 {
   font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
 h2 {
   font-size: 1.8rem;
-  margin-bottom: 1rem;
+  margin: 2rem 0 1rem;
   border-bottom: 1px solid #333;
   padding-bottom: 0.3rem;
   color: #fff;
+}
+
+/* Sections */
+main {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+section p, section li {
+  margin-bottom: 0.75rem;
+}
+
+.job {
+  margin-bottom: 2rem;
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
 }
 
 /* Buttons */
@@ -46,10 +71,13 @@ h2 {
   background: #1565c0;
 }
 
-/* Nav Styles */
+/* Navbar Styles */
 .navbar {
   background-color: #1e1e1e;
   padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .nav-container {
@@ -61,7 +89,7 @@ h2 {
 }
 
 .logo {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #66ccff;
 }
@@ -78,6 +106,7 @@ h2 {
   font-weight: bold;
 }
 
+/* Hamburger Button */
 .hamburger {
   display: none;
   font-size: 1.8rem;
@@ -89,7 +118,7 @@ h2 {
 @media (max-width: 768px) {
   .nav-links {
     position: absolute;
-    top: 70px;
+    top: 60px;
     left: 0;
     right: 0;
     background-color: #1e1e1e;
